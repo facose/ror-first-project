@@ -3,9 +3,9 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   #get  "users/login"
   #get  "pages/about_us"
-  get 'index' => 'pages#index'
-  get 'login' => "users#login"
-  get 'about_us' => 'pages#about_us'
-  get 'test' => 'pages#test'  
-  root "pages#index"
+  get 'index', to: 'pages#index'
+  get 'login', to: "users#login"
+  get 'about_us', to: 'pages#about_us'
+  get 'test', to: 'pages#test'  
+  root "pages#index"  
 end
